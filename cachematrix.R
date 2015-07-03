@@ -1,9 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## contains two funsctions, first one is used to create matrix that catch it;s reverse, and second is used to caluclate the mean
 
-## Write a short comment describing this function
-
-makeCacheMatrix <- function(x = matrix()) {
+## This function makeCacheMatrix is used to create a special matrix which can catch it's reverse
+  makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
     x <<- y
@@ -18,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+##  this function cacheSolve calculates the mean of the data and sets the value of the mean in the cache via the setmean function.
 
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
