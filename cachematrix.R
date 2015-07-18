@@ -19,7 +19,7 @@
 ##  this function cacheSolve calculates the mean of the data and sets the value of the mean in the cache via the setmean function.
 
 cacheSolve <- function(x, ...) {
-  m <- x$getsolve()
+  m <- x$getsolve() ## m is to get getsolve fun, call by the first function
   if(!is.null(m)) {
     message("getting cached data")
     return(m)
